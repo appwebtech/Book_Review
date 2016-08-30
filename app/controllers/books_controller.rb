@@ -11,10 +11,12 @@ class BooksController < ApplicationController
 
 	def new
 		@book = current_user.books.build
+		@categories = Category.all.map{ |sembi| [sembi.name, sembi.id] }
 	end
 
 	def create
 		@book = current_user.books.build(book_params)
+		@book.category_id = params[:category_id]
 		if @book.save
 			redirect_to root_path
 		else
@@ -23,10 +25,11 @@ class BooksController < ApplicationController
 	end
 
 	def edit
-		
+		@categories = Category.all.map{ |sembi| [sembi.name, sembi.id] }
 	end
 
 	def update
+		@book.category_id = params[:category_id]
 		if @book.update(book_params)
 			redirect_to book_path(@book)
 		else
@@ -43,7 +46,7 @@ class BooksController < ApplicationController
 private
 
 	def book_params
-		params.require(:book).permit(:title, :description, :author)
+		params.require(:book).permit(:title, :description, :author, :category_id)
 	end
 
 	def tafuta_book
