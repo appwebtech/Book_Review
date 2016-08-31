@@ -3,9 +3,17 @@
 <% if @books.count == 0 %>
 <h1>There are no books currently in this category</h1>
 <% else %>
-<% @books.each do |book| %>
-<a href="/books/<%= book.id %>"> <!--Show img of book-->
-<%= image_tag book.book_img.url(:book_index) %>
-</a>
-<% end %>
+
+	<div class="row">	
+
+	<% @books.each do |book| %>
+
+		<div class="col-md-3"> <!--Bootstrapify book display in a nicer way-->
+		<a href="/books/<%= book.id %>"> <!--Show img of book-->
+		<%= image_tag book.book_img.url(:book_index), class: "book" %>
+		</a>
+		</div>
+
+	<% end %>
+	</div>
 <% end %>
