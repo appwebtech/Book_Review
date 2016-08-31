@@ -51,7 +51,7 @@ class BooksController < ApplicationController
 private
 
 	def book_params
-		params.require(:book).permit(:title, :description, :author, :category_id, :book_img)
+		params.require(:book).permit(:title, :description, :author, :category_id, :book_imgw)
 	end
 
 	def tafuta_book
