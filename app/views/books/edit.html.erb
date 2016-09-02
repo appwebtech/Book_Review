@@ -1,10 +1,16 @@
+
+<div class="col-md-6 col-md-offset-3">
+
+	<div class="edit-book-form">
 <h1>Edit Book</h1>
 
-<%= simple_form_for @book, :html => { :multipart => true } do |joe| %>
-	<%= joe.select :category_id, @categories %>
-	<%= joe.file_field :book_img %> <!--Add img upload function.-->
-	<%= joe.input :title, label: "Book Title" %>
-	<%= joe.input :description %>
-	<%= joe.input :author %>
-	<%= joe.button :submit %>
-<% end %>
+		<%= simple_form_for @book, :html => { :multipart => true } do |joe| %>
+			<%= joe.select :category_id, @categories %>
+			<%= joe.file_field :book_img %> <!--Add img upload function.-->
+			<%= joe.input :title, label: "Book Title" %>
+			<%= joe.input :description %>
+			<%= joe.input :author %>
+			<%= joe.button :submit, :class => "btn-custom2" %>
+		<% end %>
+		</div>
+	</div>
