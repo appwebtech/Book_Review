@@ -1,4 +1,4 @@
-## Book Review: A Ruby on Rails application!
+# Book Review: A Ruby on Rails application!
 
 The overal goal of this application is to create book reviews.
 
@@ -9,9 +9,9 @@ I didn't dwell a lot on the super-responsiveness of the app as I was concerned w
 I'll refine the nitty gritty and create some amazing feel. Programming 
 late at night can have it's downsides, but no sooner do I get some spare time, than I will enhance lots of it's [Frontend](https://www.upwork.com/hiring/development/front-end-developer/) functionalities. 
 
-### Functional Requirements
+## Functional Requirements
 
-1. Browser duh!
+### 1. Browser duh!
 
 ```ruby
 # Chrome works well and would reccomend it for wanna be Rubyists or Rails
@@ -22,7 +22,7 @@ late at night can have it's downsides, but no sooner do I get some spare time, t
 #   though </:-)
 ```
 
-2. CMD Prompt / Terminal / Bash
+### 2. CMD Prompt / Terminal / Bash
 
 ```ruby
 # I didn't deploy my app to Heroku because all my accounts are fully
@@ -34,13 +34,13 @@ late at night can have it's downsides, but no sooner do I get some spare time, t
 # CD to the folder and run the server. (I developed with Puma but 
 # Webrick will still do.) Open localhost port 3000 et voila!
 
-# If Running Winblows, you'll need to install Ruby cos Microsoft thinks 
+# If Running Winblows NT, you'll need to install Ruby cos Microsoft thinks 
 # you should stick to Visual Studio Tools.
 ```
 
-### Technical Requirements
+## Technical Requirements
 
-1. Ruby and Rails. 
+### 1. Ruby and Rails. 
 
 ```ruby
 # My Ruby version; 
@@ -58,7 +58,7 @@ $ rails s
 # Development platform created. :-)
 ```
 
-2. Simple form
+### 2. Simple form
 
 Saved me a lot of time. 
 Used Gemfile
@@ -88,7 +88,7 @@ Then got to normal Rails coding. Thats as easy as it gets.
 <% end %>
 ```
 
-3. Bootsrap-sass
+### 3. Bootsrap-sass
 
 [![Gem Version](https://badge.fury.io/rb/bootstrap-sass.svg)](http://badge.fury.io/rb/bootstrap-sass)
 [![npm version](https://img.shields.io/npm/v/bootstrap-sass.svg?style=flat)](https://www.npmjs.com/package/bootstrap-sass)
@@ -105,7 +105,7 @@ gem 'sass-rails', '>= 3.2'
 @import "bootstrap";
 ```
 
-4. Devise
+### 4. Devise
 
 [![Build Status](https://api.travis-ci.org/plataformatec/devise.svg?branch=master)](http://travis-ci.org/plataformatec/devise)
 [![Code Climate](https://codeclimate.com/github/plataformatec/devise.svg)](https://codeclimate.com/github/plataformatec/devise)
@@ -130,7 +130,7 @@ $ rails generate devise:install
 
 Devise interacts well with rails and creates nested routes automatically. No need to update them. 
 
-5. Paperclip
+### 5. Paperclip
 
 [![Build Status](https://secure.travis-ci.org/thoughtbot/paperclip.svg?branch=master)](http://travis-ci.org/thoughtbot/paperclip)
 [![Dependency Status](https://gemnasium.com/thoughtbot/paperclip.svg?travis)](https://gemnasium.com/thoughtbot/paperclip)
@@ -168,7 +168,7 @@ end
 ```
 
 
-6. jQuery Raty
+### 6. jQuery Raty
 
 [![Build Status](https://img.shields.io/travis/wbotelhos/raty/master.svg)](https://travis-ci.org/wbotelhos/raty "Travis CI")
 [![Dependency Status](https://david-dm.org/wbotelhos/raty.svg)](https://david-dm.org/wbotelhos/raty "Dependency Status")
@@ -197,11 +197,11 @@ Script at show page seems to have a compatibility issue with Rails 5 or some oth
     
 ```
 
-7. Database creation
+### 7. Database creation
 
 I used SQLite for development. Will use PostgreSQL when I decide to deploy to Heroku.
 
-8. Deployment instructions
+### 8. Deployment instructions
 
 Deployment is straight forward in Ubuntu & Capistrano), Passenger, Git & Capistrano, Heroku, etc.
 ```ruby
@@ -222,21 +222,23 @@ $ bundle install
 # After the install, you'll need to capify the app.
 ```
 
-### Developer
+## Developer
 
 Development done by;
+
 Joseph M Mwania. 
 
-### Contacts
+## Contacts
+
 
 http://www.theappwebtech.com/
+
 https://twitter.com/appwebtech
+
 https://www.facebook.com/theappwebtech/
 
-### License
+## License
 
 MIT License. Copyright 2016 Appwebtech. http://theappwebtech.com
-
-
 
 
