@@ -5,9 +5,7 @@ The overal goal of this application is to create book reviews.
 The function goal of my developing the app was to create a collection 
 for books and manipulate them [RESTfully](https://en.wikipedia.org/wiki/Representational_state_transfer) using Rails; just like [MeteorJS](https://en.wikipedia.org/wiki/Meteor_(web_framework)), amazing design and functionalities can be achieved using Ruby on Rails.
 
-I didn't dwell a lot on the super-responsiveness of the app as I was concerned with the [Backend](https://www.upwork.com/hiring/development/back-end-web-developer/) development. When chanced 
-I'll refine the nitty gritty and create some amazing feel. Programming 
-late at night can have it's downsides, but no sooner do I get some spare time, than I will enhance lots of it's [Frontend](https://www.upwork.com/hiring/development/front-end-developer/) functionalities. 
+I didn't dwell a lot on the super-responsiveness of the app as I was concerned with the [Backend](https://www.upwork.com/hiring/development/back-end-web-developer/) development. When chanced I'll refine the nitty gritty and create some amazing feel. Programming late at night can have it's downsides, but no sooner do I get some spare time, than I will enhance lots of it's [Frontend](https://www.upwork.com/hiring/development/front-end-developer/) functionalities. 
 
 
 # The Software Development Cycle in a Nutshell. 
