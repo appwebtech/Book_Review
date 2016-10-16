@@ -9,56 +9,56 @@ I didn't dwell a lot on the super-responsiveness of the app as I was concerned w
 I'll refine the nitty gritty and create some amazing feel. Programming 
 late at night can have it's downsides, but no sooner do I get some spare time, than I will enhance lots of it's [Frontend](https://www.upwork.com/hiring/development/front-end-developer/) functionalities. 
 
-## Functional Requirements
 
-### 1. Browser duh!
+# The Software Development Cycle in a Nutshell. 
+
+I wont go in details of every procedure I undertook to develop this app, but will nevertheless mention the main [gems](https://rubygems.org/) that I used to enhance the functionalities of this Website App. 
+
+I didn't use TDD, a precursor of [Behavior Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development) whilst developing this application. It's functionality is incredible, it's user friendly but it's worth mentioning that I didn't write any tests for the spirit of transparency.
+
+
+## 1. Chrome Browser and Developer Tools.
+
+Whilst coding, I used Chrome Browser and it's Developer Tools to View. Chrome bonds well with my local server and updates Automatically whenever I make changes within my [Models, Views or Controllers](https://www.tutorialspoint.com/ruby-on-rails/rails-framework.htm).  
+
+I have various Chrome add-ons that enhance my productivity as a Software Developer and there is a [bundle](https://chrome.google.com/webstore/search/developer%20pack) that can be downloaded and installed from Chrome Web Store. 
+
+
+## 2. CMD Prompt / Terminal / Bash
+
+I used a [UNIX](https://en.wikipedia.org/wiki/Unix) machine for the development. An iMac to be precise running the following basic specs. 
 
 ```ruby
-# Chrome works well and would reccomend it for wanna be Rubyists or Rails
-# developers due to it's rich developer tools. 
+# OSX El-Capitan.
 
+# Puma Webserver (Installs with Rails App).
 
-#=> Other browsers should do the charm as well, wouldn't reccomend IE 
-#   though </:-)
+# Sublime Text 3
+
+# Browser Sync
+ 
+# I don't use Winblows NT, for coding. :-)
 ```
 
-### 2. CMD Prompt / Terminal / Bash
-
-```ruby
-# I didn't deploy my app to Heroku because all my accounts are fully
-# loaded with apps and thus have to pay for a deployment.
 
 
-# If on a UNIX machine (Linux or Mac), chances are that you have Ruby 
-# installed. Clone the folder or download it on your machine.
-# CD to the folder and run the server. (I developed with Puma but 
-# Webrick will still do.) Open localhost port 3000 et voila!
+# Technical Requirements
 
-# If Running Winblows NT, you'll need to install Ruby cos Microsoft thinks 
-# you should stick to Visual Studio Tools.
-```
 
-## Technical Requirements
-
-### 1. Ruby and Rails. 
+## 1. Ruby and Rails. 
 
 ```ruby
 # My Ruby version; 
 ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]
 # My Rails version;
 Rails 5.0.0.1
+
 # I use Version Control. Prefer Git than Subversion. 
 git version 2.6.4
-# Stuff you'll get out of the box are SQLite, most gems and their 
-# dependencies for a basic system functionality. 
-$ mkdir <your Dir>
-$ CD <your Dir>
-$ rails new <name of app>
-$ rails s 
-# Development platform created. :-)
+
 ```
 
-### 2. Simple form
+## 2. Simple form
 
 Saved me a lot of time. 
 Used Gemfile
@@ -74,7 +74,7 @@ $ bundle install
 $ rails generate simple_form:install
 ```
 
-Then got to normal Rails coding. Thats as easy as it gets. 
+Then got to normal Rails coding. Thats as easy as it gets e.g 
 
 ```erb
 <%= simple_form_for @book, :html => { :multipart => true } do |josembi| %>
@@ -88,7 +88,8 @@ Then got to normal Rails coding. Thats as easy as it gets.
 <% end %>
 ```
 
-### 3. Bootsrap-sass
+
+## 3. Bootsrap-sass
 
 [![Gem Version](https://badge.fury.io/rb/bootstrap-sass.svg)](http://badge.fury.io/rb/bootstrap-sass)
 [![npm version](https://img.shields.io/npm/v/bootstrap-sass.svg?style=flat)](https://www.npmjs.com/package/bootstrap-sass)
@@ -105,7 +106,8 @@ gem 'sass-rails', '>= 3.2'
 @import "bootstrap";
 ```
 
-### 4. Devise
+
+## 4. Devise
 
 [![Build Status](https://api.travis-ci.org/plataformatec/devise.svg?branch=master)](http://travis-ci.org/plataformatec/devise)
 [![Code Climate](https://codeclimate.com/github/plataformatec/devise.svg)](https://codeclimate.com/github/plataformatec/devise)
@@ -130,7 +132,8 @@ $ rails generate devise:install
 
 Devise interacts well with rails and creates nested routes automatically. No need to update them. 
 
-### 5. Paperclip
+
+## 5. Paperclip
 
 [![Build Status](https://secure.travis-ci.org/thoughtbot/paperclip.svg?branch=master)](http://travis-ci.org/thoughtbot/paperclip)
 [![Dependency Status](https://gemnasium.com/thoughtbot/paperclip.svg?travis)](https://gemnasium.com/thoughtbot/paperclip)
@@ -168,7 +171,8 @@ end
 ```
 
 
-### 6. jQuery Raty
+
+## 6. jQuery Raty
 
 [![Build Status](https://img.shields.io/travis/wbotelhos/raty/master.svg)](https://travis-ci.org/wbotelhos/raty "Travis CI")
 [![Dependency Status](https://david-dm.org/wbotelhos/raty.svg)](https://david-dm.org/wbotelhos/raty "Dependency Status")
@@ -197,21 +201,21 @@ Script at show page seems to have a compatibility issue with Rails 5 or some oth
     
 ```
 
-### 7. Database creation
+
+## 7. Database creation
 
 I used SQLite for development. Will use PostgreSQL when I decide to deploy to Heroku.
 
-### 8. Deployment instructions
 
-Deployment is straight forward in Ubuntu & Capistrano), Passenger, Git & Capistrano, Heroku, etc.
+## 8. Deployment instructions
+
+Deployment is straight forward in Ubuntu & Capistrano, Passenger, Git & Capistrano, Heroku, etc.
 ```ruby
-# HEROKU: You'll need to use PostgreSQL and NOT SQLite for deployment. The 
-# latter is slow in their servers.
+# Used PostgreSQL for deployment in Heroku servers and SQLite for development. 
+# Used Puma local webserver.
 
-# GIT & Capistrano: Version Control and Push to a remote repository.
-# git remote add origin git@github.com:username/your-repo-name.git  {Using SSH}
-# git remote add origin https://github.com/username/your-repo-name.git 
-# {Using HTTP}
+# GIT & Capistrano: Version Control and Push to a remote repo.
+
 # Capistrano;
 group :development do
     gem 'capistrano'
@@ -219,7 +223,7 @@ end
 
 $ bundle install 
 
-# After the install, you'll need to capify the app.
+# Install, then capify the app.
 ```
 
 ## Developer
@@ -227,6 +231,7 @@ $ bundle install
 Development done by;
 
 Joseph M Mwania. 
+
 
 ## Contacts
 
