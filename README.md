@@ -1,4 +1,31 @@
-# Book Review: A Ruby on Rails application!
+
+<div align="center">
+<h1>Book Review: A Ruby on Rails application!</h1> 
+<h2>Software Development Documentation</h2>
+  <h3>
+    <a href="#">
+      FrontEnd
+    </a>
+    <span> | </span>
+      <a href="#">
+        BackEnd
+      </a>
+    <span> | </span>
+      <a href="#">
+        FullStack
+      </a>
+  </h3>
+</div>
+
+<div align="center">
+  <sub>Built with ❤︎ by
+  <a href="https://github.com/appwebtech">Joseph M Mwania</a> for
+  <a href="http://theappwebtech.com/">
+    Appwebtech
+  </a>
+</div>
+
+# Introduction
 
 The overal goal of this application is to create book reviews.
 
@@ -8,7 +35,7 @@ for books and manipulate them [RESTfully](https://en.wikipedia.org/wiki/Represen
 I didn't dwell a lot on the super-responsiveness of the app as I was concerned with the [Backend](https://www.upwork.com/hiring/development/back-end-web-developer/) development. When chanced I'll refine the nitty gritty and create some amazing feel. Programming late at night can have it's downsides, but no sooner do I get some spare time, than I will enhance lots of it's [Frontend](https://www.upwork.com/hiring/development/front-end-developer/) functionalities. 
 
 
-# The Software Development Cycle in a Nutshell. 
+# Software Development Cycle in a Nutshell. 
 
 I wont go in details of every procedure I undertook to develop this app, but will nevertheless mention the main [gems](https://rubygems.org/) that I used to enhance the functionalities of this Website App. 
 
@@ -40,7 +67,7 @@ I used a [UNIX](https://en.wikipedia.org/wiki/Unix) machine for the development.
 
 
 
-# Technical Requirements
+# Software 
 
 
 ## 1. Ruby and Rails. 
@@ -233,12 +260,15 @@ Joseph M Mwania.
 
 ## Contacts
 
+[GitHub](https://github.com/appwebtech)
 
-http://www.theappwebtech.com/
+[Appwebtech](http://www.theappwebtech.com/)
 
-https://twitter.com/appwebtech
+[Twitter](https://twitter.com/appwebtech)
 
-https://www.facebook.com/theappwebtech/
+[Facebook](https://www.facebook.com/theappwebtech/)
+
+[Pinterest](https://it.pinterest.com/appwebtech/)
 
 ## License
 
