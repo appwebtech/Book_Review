@@ -18,7 +18,7 @@
 </div>
 
 <div align="center">
-  <sub>Built with ❤︎ by
+  <sub>Built by
   <a href="https://github.com/appwebtech">Joseph M Mwania</a> for
   <a href="http://theappwebtech.com/">
     Appwebtech
