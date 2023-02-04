@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+gem 'rails', '~> 5.0.7'
 gem 'sqlite3'
-gem 'puma', '~> 3.12'
+gem 'puma', '~> 6.0'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.4'
